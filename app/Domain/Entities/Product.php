@@ -40,7 +40,7 @@ class Product
         return new self(null, $name, $description, $price, $stock);
     }
 
-    public static function update(
+    public static function reconstitute(
         string $id,
         string $name,
         string $description,
