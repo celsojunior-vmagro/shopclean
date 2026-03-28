@@ -2,14 +2,14 @@
 
 namespace App\Domain\Entities;
 
-class OrderItem
+readonly class OrderItem
 {
     private function __construct(
-        private readonly ?string $id,
-        private readonly string  $productId,
-        private readonly string  $productName,
-        private readonly float   $unitPrice,
-        private readonly int     $quantity,
+        private ?string $id,
+        private string  $productId,
+        private string  $productName,
+        private float   $unitPrice,
+        private int     $quantity,
     )
     {
         $this->validate();
