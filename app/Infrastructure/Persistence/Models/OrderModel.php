@@ -13,8 +13,9 @@ class OrderModel extends Model
     protected $table = 'orders';
 
     protected $fillable = [
+        'id',
         'customer_id',
-        'status'
+        'status',
     ];
 
     public function items(): HasMany
