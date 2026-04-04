@@ -7,10 +7,10 @@ use App\Application\DTOs\CreateProductOutput;
 use App\Domain\Entities\Product;
 use App\Domain\Repositories\ProductRepository;
 
-class CreateProductUseCase
+readonly class CreateProductUseCase
 {
     public function __construct(
-        private readonly ProductRepository $productRepository,
+        private ProductRepository $productRepository,
     )
     {
     }
